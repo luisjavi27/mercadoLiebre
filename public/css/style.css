@@ -1,4 +1,283 @@
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 header {
-    background-color: yellow;
+  background-color: #eac926;
+}
+
+.titulo {
+  font-size: 24px;
+  color: #666;
+  margin: 20px 0px;
+}
+
+.cuerpotexto {
+  font-size: 12px;
+}
+
+.precios {
+  font-size: 18px;
+}
+
+.descripcion {
+  font-size: 16px;
+  color: #666;
+  display: none;
+  margin-top: 20px;
+}
+
+.descuento {
+  color: #39b54a;
+  font-size: 16px;
+  width: 70%;
+}
+
+.banner {
+  width: 100%;
+}
+
+.fa-truck {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  color: #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  right: -85%;
+  top: -33px;
+}
+
+#hamburgerIcon {
+  text-align: center;
+  display: block;
+}
+
+#hamburgerIcon i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+#navbarHeader {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+#logoHeader {
+  padding: 10px;
+  width: 50%;
+}
+
+#inputSearch {
+  padding-left: 5px;
+  padding-right: 15px;
+  background: url("../images/searchIcon.svg") no-repeat right/11px !important;
+  background-size: 20px;
+  background-color: white !important;
+  border-radius: 5px;
+  border-color: white;
+  align-content: center;
+  align-items: center;
+}
+
+#searchIcon {
+  display: none;
+}
+
+#textHeader {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#navbar {
+  display: none;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section article {
+  margin: 10px 0px;
+  background-color: #fff;
+}
+
+main section article img {
+  width: 100%;
+}
+
+header .form {
+  font-size: 11px;
+  align-items: center;
+  display: flex;
+  padding: 2px;
+  width: 50%;
+}
+
+header .form input {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  outline: none;
+  padding: 2px;
+  margin-right: 5px;
+  width: 200px;
+  font-size: 11px;
+}
+
+header nav {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+article div.article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  padding: 15px;
+}
+
+@media (min-width: 361px) {
+
+
+  #logoHeader {
+    width: 32%;
+  }
+
+  #textHeader {
+    width: 32%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-top: 0;
+    font-size:12px ;
+  }
+
+
+  #hamburgerIcon {
+    display: none;
+  }
+
+  #inputSearch {
+    background: none !important;
+    background-color: white !important;
+    width: 100%;
+  }
+
+  #searchIcon {
+    display: block;
+  }
+
+  #navbar {
+    display: flex;
+    width: 100%;
+    padding-right: 40px;
+  }
+  #navbarMenu {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  #navbarCuenta {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
     
+  }
+
+  #navbar li{
+      margin: 0px 8px ;
+  }
+
+
+  header nav {
+      font-size:12px ;
+  }
+  header div .form {
+    width: 32%;
+    margin-right: 5px;
+  }
+
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  main section div.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  main section div.products article {
+    width: 45%;
+  }
+
+  .price,
+  .discount {
+    width: 50%;
+  }
+
+  main section article .descripcion {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  main section div.products article {
+    width: 22%;
+  }
+  header nav {
+    font-size:16px ;
+}
+
+#textHeader {
+
+    font-size:16px ;
+  }
 }
