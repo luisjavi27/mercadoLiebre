@@ -9,7 +9,7 @@
     "start": "node app.js"
 
   },
-  "author": "",
+  "author": "luis javier iglesias",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3"
