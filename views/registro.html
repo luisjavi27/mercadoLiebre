@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleRegistro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -57,7 +58,34 @@
         <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
     </section>
     <main>
-        <h1>registro </h1>
+        <form action="">
+            <input type="text" placeholder="Nombre y apellido">
+            <input type="text" placeholder="Nombre de usuario">
+            <input type="email" placeholder="Email">
+
+            <h2>Fecha de nacimiento</h2>
+
+            <input type="date">
+            <input type="text" placeholder="Domicilio">
+
+            <h2>Perfil de usuario</h2>
+            <div>
+                <div>
+                    <input type="radio" id="radioComprador" value="Comprador"> <label for="radioComprador">Comprador</label>
+                </div>
+                <div>
+                    <input type="radio" id="radioVendedor" value="Vendedor">  <label for="radioVendedor">Vendedor</label>
+                </div>
+            </div>
+
+            <h2>Intereses</h2>
+            <div><input type="checkbox" id="checkboxElectro" value="Electro"> <label for="checkboxElectro">Electro</label></div>
+            <div><input type="checkbox" id="checkboxModa" value="Moda"> <label for="checkboxModa">Moda</label></div>
+            <div><input type="checkbox" id="checkboxHogar" value="Hogar"> <label for="checkboxHogar">Hogar</label></div>
+            <div><input type="checkbox" id="checkboxJugueteria" value="Jugueteria"> <label for="checkboxJugueteria">Jugueteria</label></div>
+            <div><input type="checkbox" id="checkboxVidaSana" value="VidaSana"> <label for="checkboxVidaSana">Vida Sana</label>
+            </div>
+        </form>
     </main>
     <footer>
 

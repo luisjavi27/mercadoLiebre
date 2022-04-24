@@ -1,0 +1,26 @@
+#botonEnviar{
+    background-color: #1259c3;
+    color:white;
+    font-weight: bold;
+
+ }
+
+main form{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main form input{
+   border-radius: 5px;
+   border-style: none;;
+   margin: 2%;
+   padding: 0% 2%;
+   width: 70%;
+   height: 40px;
+ 
+}
+
+
