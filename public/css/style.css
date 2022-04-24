@@ -169,6 +169,8 @@ main section article img {
   width: 100%;
 }
 
+
+
 header .form {
   font-size: 11px;
   align-items: center;
@@ -378,5 +380,16 @@ footer {
   main section article:hover .fa-truck {
     transition-duration: 0.7s;
     transform: rotate(-90deg);
+    z-index:3; 
+  }
+
+  main section article img{
+    transition: 500ms linear;
+    z-index:2; 
+  }
+
+  main section article:hover img {
+    position: relative;
+    transform: scale(1.1);
   }
 }
