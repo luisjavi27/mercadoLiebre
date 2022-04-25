@@ -22,7 +22,6 @@ header {
   margin: 20px 0px;
 }
 
-
 .cuerpotexto {
   font-size: 12px;
 }
@@ -30,10 +29,10 @@ header {
   width: 100%;
 }
 
-.precioDescuento{
-  display:flex;
+.precioDescuento {
+  display: flex;
   width: 100%;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .precios {
@@ -44,7 +43,6 @@ header {
   color: #39b54a;
   font-size: 16px;
   margin-left: 30%;
-
 }
 .descripcion {
   font-size: 16px;
@@ -52,7 +50,6 @@ header {
   display: block !important;
   margin-top: 20px;
 }
-
 
 .fa-truck {
   display: block;
@@ -141,7 +138,6 @@ header {
   font-size: 30px;
   margin-bottom: 15px;
   color: #1259c3;
-  
 }
 
 #footerDescription section p {
@@ -169,8 +165,6 @@ main section article {
 main section article img {
   width: 100%;
 }
-
-
 
 header .form {
   font-size: 11px;
@@ -256,6 +250,15 @@ footer {
 
   #searchIcon {
     display: block;
+    background-color: transparent;
+    border: none;
+    height: 35%;
+    width: 10%;
+    border-radius: 5px;
+  }
+
+  #searchIcon:hover {
+    background-color: #dab600e7;
   }
 
   #navbar {
@@ -319,39 +322,34 @@ footer {
   }
 
   #inputSearch {
-    height:35%;
+    height: 35%;
   }
 
   #footerDescription {
     flex-direction: row;
   }
 
-  #iconCreditCard{
-    
+  #iconCreditCard {
     transition: 500ms linear;
- 
   }
-  #iconCreditCard:hover{
-    
+  #iconCreditCard:hover {
     transform: translateX(20px);
   }
 
-  #iconGift{
+  #iconGift {
     transition: 500ms linear;
   }
 
-  #iconGift:hover{
+  #iconGift:hover {
     transform: perspective(150px) rotateX(45deg);
   }
 
-  #iconShield{
+  #iconShield {
     transition: 500ms linear;
   }
-  #iconShield:hover{
+  #iconShield:hover {
     transform: scale(1.5);
   }
-
-
 
   header nav {
     font-size: 16px;
@@ -362,31 +360,29 @@ footer {
     box-shadow: none !important;
   }
 
-  main section  div.products article:hover {
+  main section div.products article:hover {
     /* transition-duration: 0.7s; */
     transition: all 500ms ease;
     box-shadow: 0px 0px 10px rgb(100, 100, 100) !important;
   }
 
   main section article .descripcion {
-   
     display: none !important;
   }
 
   main section article:hover .descripcion {
-   
     display: block !important;
   }
-  
+
   main section article:hover .fa-truck {
     transition-duration: 0.7s;
     transform: rotate(-90deg);
-    z-index:3; 
+    z-index: 3;
   }
 
-  main section article img{
+  main section article img {
     transition: 500ms linear;
-    z-index:2; 
+    z-index: 2;
   }
 
   main section article:hover img {

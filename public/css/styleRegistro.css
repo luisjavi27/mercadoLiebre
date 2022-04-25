@@ -1,53 +1,55 @@
-
-#inputFoto{
-    width:100%;
-    display:flex;
-    align-items:center;
-    margin: 0px;
-    padding: 0px;
+#inputFoto {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
 
-#botones{
-    margin-top: 0px;
-    display:flex;
-    justify-content:space-around;
+#botones {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.boton{
-    background-color: #1259c3;
-    color:white;
-    font-weight: bold;
-    width:30%;
-
- }
-
-main{
-    display:flex;
-justify-content: center;
+.boton {
+  background-color: #1259c3;
+  color: white;
+  font-weight: bold;
+  width: 30%;
 }
 
-main form{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+main {
+  display: flex;
+  justify-content: center;
 }
 
-main form h2{
-    font-size: 24px;
-    margin: 10px 0px;
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 
-main form input{
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 10px;
+main form h2 {
+  font-size: 24px;
+  margin: 10px 0px;
+}
+
+main form input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
 }
 
 @media (min-width: 361px) {
+  main form {
+    width: 60%;
+  }
+}
 
-    main form{
-        width: 70%;
-    }
-
+@media (min-width: 769px) {
+  main form {
+    width: 40%;
+  }
 }

@@ -20,11 +20,11 @@
             <div id="logoHeader">
                 <a href="/"><img src='images/logo-mercado-liebre.svg' /></a>
             </div>
-            <div class="form" action="#" method="GET">
-                <input type="search" id="inputSearch" placeholder="Buscar productos, marcas y más    ">
-                <div class="submit" id="searchIcon">
+            <div class="form" action="#" method="GET" enctype="multipart/form-data">
+                <input type="search" id="inputSearch" placeholder="Buscar productos, marcas y más    " required>
+                <button type="submit" id="searchIcon">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                </button>
             </div>
 
             <div id="textHeader">
@@ -58,7 +58,7 @@
         <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
     </section>
     <main>
-        <form method="post" enctype="multipart/form-data" >
+        <form method="post" enctype="multipart/form-data">
             <h2>Crea tu cuenta</h2>
 
             <input type="text" placeholder="Nombre y apellido" required>
@@ -72,25 +72,28 @@
 
             <h2>Perfil de usuario</h2>
             <div>
-               
-                    <label><input type="radio" name="perfil"  value="Comprador" checked required>Comprador</label>
-               
-                    <label><input type="radio" name="perfil" value="Vendedor"> Vendedor</label>
-              
+
+                <label><input type="radio" name="perfil" value="Comprador" checked required>Comprador</label>
+
+                <label><input type="radio" name="perfil" value="Vendedor"> Vendedor</label>
+
             </div>
 
             <h2>Intereses</h2>
-            <div><input type="checkbox" id="checkboxElectro" value="Electro"> <label for="checkboxElectro">Electro</label></div>
+            <div><input type="checkbox" id="checkboxElectro" value="Electro"> <label
+                    for="checkboxElectro">Electro</label></div>
             <div><input type="checkbox" id="checkboxModa" value="Moda"> <label for="checkboxModa">Moda</label></div>
             <div><input type="checkbox" id="checkboxHogar" value="Hogar"> <label for="checkboxHogar">Hogar</label></div>
-            <div><input type="checkbox" id="checkboxJugueteria" value="Jugueteria"> <label for="checkboxJugueteria">Jugueteria</label></div>
-            <div><input type="checkbox" id="checkboxVidaSana" value="VidaSana"> <label for="checkboxVidaSana">Vida Sana</label></div>
-            
+            <div><input type="checkbox" id="checkboxJugueteria" value="Jugueteria"> <label
+                    for="checkboxJugueteria">Jugueteria</label></div>
+            <div><input type="checkbox" id="checkboxVidaSana" value="VidaSana"> <label for="checkboxVidaSana">Vida
+                    Sana</label></div>
+
             <h2>Detalles de cuenta</h2>
             <p id="inputFoto">
                 Foto de perfil
-                <input type="file" id="fileFoto" name="fotoPerfil" accept="image/png, .jpeg, .jpg"> 
-            </p> 
+                <input type="file" id="fileFoto" name="fotoPerfil" accept="image/png, .jpeg, .jpg">
+            </p>
 
             <input type="password" placeholder="Contraseña" required>
             <input type="password" placeholder="Confirma la contraseña" required>
@@ -99,8 +102,8 @@
                 <input class="boton" id="botonEnviar" type="submit" value="Enviar">
                 <input class="boton" id="botonLimpiar" type="reset" value="Limpiar">
             </div>
-           
-           
+
+
         </form>
     </main>
     <footer>

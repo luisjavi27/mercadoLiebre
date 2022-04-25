@@ -20,11 +20,11 @@
             <div id="logoHeader">
                 <a href="/"><img src='images/logo-mercado-liebre.svg' /></a>
             </div>
-            <div class="form" action="#" method="GET">
-                <input type="search" id="inputSearch" placeholder="Buscar productos, marcas y más    ">
-                <div class="submit" id="searchIcon">
+            <div class="form" action="#" method="GET" enctype="multipart/form-data">
+                <input type="search" id="inputSearch" placeholder="Buscar productos, marcas y más    " required>
+                <button type="submit" id="searchIcon">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                </button>
             </div>
 
             <div id="textHeader">
@@ -58,7 +58,7 @@
         <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
     </section>
     <main>
-        <form  method="post"">
+        <form method="post" enctype="multipart/form-data">
             <input type="text" placeholder="Nombre de usuario" required>
             <input type="password" placeholder="Contraseña" required>
             <input id="botonEnviar" type="submit" value="Enviar">
