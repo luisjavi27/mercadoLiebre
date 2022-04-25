@@ -58,15 +58,17 @@
         <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
     </section>
     <main>
-        <form action="">
-            <input type="text" placeholder="Nombre y apellido">
-            <input type="text" placeholder="Nombre de usuario">
-            <input type="email" placeholder="Email">
+        <form method="post" enctype="multipart/form-data" >
+            <h2>Crea tu cuenta</h2>
+
+            <input type="text" placeholder="Nombre y apellido" required>
+            <input type="text" placeholder="Nombre de usuario" required>
+            <input type="email" placeholder="Email" required>
 
             <h2>Fecha de nacimiento</h2>
 
-            <input type="date">
-            <input type="text" placeholder="Domicilio">
+            <input type="date" required>
+            <input type="text" placeholder="Domicilio" required>
 
             <h2>Perfil de usuario</h2>
             <div>
@@ -83,8 +85,23 @@
             <div><input type="checkbox" id="checkboxModa" value="Moda"> <label for="checkboxModa">Moda</label></div>
             <div><input type="checkbox" id="checkboxHogar" value="Hogar"> <label for="checkboxHogar">Hogar</label></div>
             <div><input type="checkbox" id="checkboxJugueteria" value="Jugueteria"> <label for="checkboxJugueteria">Jugueteria</label></div>
-            <div><input type="checkbox" id="checkboxVidaSana" value="VidaSana"> <label for="checkboxVidaSana">Vida Sana</label>
+            <div><input type="checkbox" id="checkboxVidaSana" value="VidaSana"> <label for="checkboxVidaSana">Vida Sana</label></div>
+            
+            <h2>Detalles de cuenta</h2>
+            <p id="inputFoto">
+                Foto de perfil
+                <input type="file" id="fileFoto" name="fotoPerfil" accept="image/png, .jpeg, .jpg"> 
+            </p> 
+
+            <input type="password" placeholder="Contraseña" required>
+            <input type="password" placeholder="Confirma la contraseña" required>
+
+            <div id="botones">
+                <input class="boton" id="botonEnviar" type="submit" value="Enviar">
+                <input class="boton" id="botonLimpiar" type="reset" value="Limpiar">
             </div>
+           
+           
         </form>
     </main>
     <footer>
