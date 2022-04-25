@@ -2,7 +2,18 @@
   background-color: #1259c3;
   color: white;
   font-weight: bold;
+  background-color: #0049b7;
 }
+
+#botonEnviar {
+    cursor: pointer;
+}
+
+#botonEnviar:active {
+    transition: 50ms linear;
+    transform: scale(1.1);
+  }
+
 
 main form {
   display: flex;
